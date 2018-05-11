@@ -1,0 +1,13 @@
+<div class="blog-spots">
+  <h1>BlogSpots</h1>
+  <div class="menu-authors">
+    {{#each model as |blogspot|}}
+      {{#link-to 'blogspot' author.id class="link-blogspot"}}
+        {{blogspot.tittle}}
+      {{/link-to}}
+    {{/each}}
+  </div>
+  <div class="author-detail">
+    {{outlet}}
+  </div>
+</div>
